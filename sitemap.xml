@@ -30,4 +30,11 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+  <loc>https://lab.mangelgare.com/servicios/auditoria-seo-premium/offers.html</loc>
+  <lastmod>YYYY-MM-DD</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.7</priority>
+</url>
+
 </urlset>
