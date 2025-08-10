@@ -1,47 +1,58 @@
-<!doctype html><html lang="es"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Schema Product (JSON-LD) · Mangel Gare LAB</title>
-<link rel="canonical" href="https://lab.mangelgare.com/schemas/product-jsonld.html">
-<link rel="stylesheet" href="/assets/styles.css">
-</head><body>
-<header class="wrap"><nav class="nav">
-  <a href="/">Inicio</a><a href="/schemas/">Schemas</a>
-</nav></header>
-<main class="wrap">
-  <h1>🧩 Ejemplo de JSON-LD para <em>Product</em></h1>
-  <p>Copia/pega y valida en el <a href="https://search.google.com/test/rich-results" target="_blank" rel="noopener">Rich Results Test</a>.</p>
-  <pre><code>{
-"@context": "https://schema.org",
-"@type": "Product",
-"name": "Champú Volumen ICON 250ml",
-"description": "Champú para dar volumen al cabello fino. Sin sulfatos.",
-"sku": "ICON-CHV-250",
-"gtin13": "1234567890123",
-"image": [
-  "https://lab.mangelgare.com/assets/og-image.jpg"
-],
-"brand": { "@type": "Brand", "name": "ICON" },
-"aggregateRating": {
-  "@type": "AggregateRating",
-  "ratingValue": "4.6",
-  "reviewCount": "128"
-},
-"offers": {
-  "@type": "AggregateOffer",
-  "priceCurrency": "EUR",
-  "lowPrice": "17.90",
-  "highPrice": "19.90",
-  "offerCount": "3",
-  "availability": "https://schema.org/InStock",
-  "url": "https://ejemplo.com/producto/champu-icon"
-},
-"review": [{
-  "@type": "Review",
-  "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-  "author": { "@type": "Person", "name": "Cliente verificado" }
-}]
-}</code></pre>
-</main>
-<footer class="wrap"><small>© <span id="y"></span> Mangel Gare</small></footer>
-<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
-</body></html>
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Schema Product (JSON-LD) · Mangel Gare LAB</title>
+    <link rel="canonical" href="https://lab.mangelgare.com/schemas/product-jsonld.html">
+    <link rel="stylesheet" href="/assets/styles.css">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Auditoría SEO Premium",
+  "description": "Auditoría técnica avanzada para optimizar tu web, mejorar el rendimiento y aumentar la visibilidad en Google.",
+  "image": [
+    "https://lab.mangelgare.com/assets/products/audit-seo-premium.jpg",
+    "https://lab.mangelgare.com/assets/products/audit-seo-premium.webp"
+  ],
+  "sku": "AUDIT-SEO-PREMIUM",
+  "brand": {
+    "@type": "Brand",
+    "name": "Mangel Gare"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 5,
+    "reviewCount": 4
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "EUR",
+    "price": "2050",
+    "availability": "https://schema.org/InStock",
+    "url": "https://lab.mangelgare.com/producto/auditoria-seo-premium"
+  }
+}
+</script>
+
+</head>
+
+<body>
+    <header class="wrap">
+        <nav class="nav">
+            <a href="/">Inicio</a><a href="/schemas/">Schemas</a>
+        </nav>
+    </header>
+    <main class="wrap">
+        <h1>🧩 Ejemplo de JSON-LD para <em>Product</em></h1>
+        <p>Copia/pega y valida en el <a href="https://search.google.com/test/rich-results" target="_blank"
+                rel="noopener">Rich Results Test</a>.</p>
+
+    </main>
+    <footer class="wrap"><small>© <span id="y"></span> Mangel Gare</small></footer>
+    <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
+
+</html>
