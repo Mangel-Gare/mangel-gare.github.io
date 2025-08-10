@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>404 – Página no encontrada | Mangel Gare LAB</title>
+  <meta name="description" content="La URL solicitada no existe. Usa los enlaces o el buscador para encontrar lo que necesitas." />
+  <!-- En 404 es seguro marcar noindex -->
+  <meta name="robots" content="noindex,follow" />
+  <link rel="stylesheet" href="/assets/styles.css" />
+  <style>
+    .center { min-height: 70vh; display: grid; place-items: center; text-align: center }
+    .actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 12px }
+    .btn { padding: 8px 14px; border-radius: 999px; background: var(--card); text-decoration: none }
+    form[role="search"] { display: flex; gap: 8px; justify-content: center; margin-top: 12px }
+    input[type="text"]{ padding: 8px 10px; border-radius: 8px; border: 1px solid #333; background: #0f0f14; color: var(--fg); min-width: 260px }
+    button{ padding: 8px 12px; border-radius: 8px; border: 0 }
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <nav class="nav">
+      <a href="/">Inicio</a>
+      <a href="/demos/">Demos</a>
+      <a href="/schemas/">Schemas</a>
+      <a href="/ga4/">GA4</a>
+    </nav>
+  </header>
+
+  <main class="wrap center">
+    <section>
+      <h1>😕 404 · Página no encontrada</h1>
+      <p>La URL que has abierto no existe o ha cambiado. Prueba con estos enlaces o busca dentro del sitio.</p>
+
+      <div class="actions">
+        <a class="btn" href="/">Ir al inicio</a>
+        <a class="btn" href="/sitemap.xml">Ver sitemap</a>
+        <a class="btn" href="javascript:history.back()">Volver atrás</a>
+      </div>
+
+      <form role="search" action="https://www.google.com/search" method="get" aria-label="Buscar en este sitio">
+        <input id="q" type="text" name="q" placeholder="Buscar en el sitio…" aria-label="Consulta de búsqueda" />
+        <button type="submit">Buscar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <small>© <span id="y"></span> Mangel Gare</small>
+  </footer>
+
+  <script>
+    // Rellena el año del footer
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    // Envío de búsqueda con "site:tu-dominio" automáticamente
+    const form = document.querySelector('form[role="search"]');
+    form.addEventListener('submit', (e) => {
+      const input = document.getElementById('q');
+      const host = location.hostname;
+      input.value = `site:${host} ` + input.value.trim();
+    });
+  </script>
+</body>
+</html>
