@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mangel Gare LAB · SEO técnico y Web Performance</title>
+  <meta name="description" content="Demos y utilidades técnicas de Mangel Gare: SEO, GA4, datos estructurados, Lighthouse y accesibilidad." />
+  <link rel="canonical" href="https://mangel-gare.github.io/" />
+  <meta property="og:title" content="Mangel Gare LAB" />
+  <meta property="og:description" content="Demos y utilidades de SEO técnico." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mangel-gare.github.io/" />
+  <meta property="og:image" content="https://mangel-gare.github.io/assets/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preload" href="/assets/styles.css" as="style">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mangel Gare",
+    "url": "https://mangel-gare.github.io/",
+    "sameAs": [
+      "https://mangelgare.com",
+      "https://optimizadorseo.com",
+      "https://github.com/Mangel-Gare",
+      "https://www.linkedin.com/in/mangel-gare/"
+    ],
+    "jobTitle": "Consultor SEO técnico"
+  }
+  </script>
+</head>
+<body>
+  <header class="wrap">
+    <h1>🔧 Mangel Gare · Lab técnico</h1>
+    <p>Demos y plantillas de <strong>SEO técnico</strong>, <strong>GA4</strong>, <strong>datos estructurados</strong>, <strong>Lighthouse</strong> y <strong>accesibilidad</strong>.</p>
+    <nav class="nav">
+      <a href="/">Inicio</a>
+      <a href="/demos/">Demos</a>
+      <a href="/schemas/">Schemas</a>
+      <a href="/ga4/">GA4</a>
+      <a href="https://mangelgare.com">Blog</a>
+      <a href="https://optimizadorseo.com">Servicios</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section>
+      <h2>🚀 Últimas pruebas</h2>
+      <ul>
+        <li><a href="/schemas/">JSON-LD (ejemplos validados)</a></li>
+        <li><a href="/ga4/">DataLayer GA4 para e-commerce</a></li>
+        <li><a href="/demos/">Componentes accesibles (GenerateBlocks)</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <small>© <span id="y"></span> Mangel Gare · <a href="/robots.txt">robots</a> · <a href="/sitemap.xml">sitemap</a></small>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+
+  <!-- GA4 (opcional): remplaza G-XXXXXXXXXX por tu ID y pega debajo -->
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX', { anonymize_ip: true });
+  </script>
+  -->
+</body>
+</html>
