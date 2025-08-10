@@ -3,4 +3,3 @@ Disallow:
 
 Sitemap: https://lab.mangelgare.com/sitemap.xml
 
-
